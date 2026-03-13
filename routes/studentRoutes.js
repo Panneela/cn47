@@ -1,7 +1,7 @@
 const express=require("express");
 const router=express.Router();
 
-const Student = require("../models/Student");
+const Student = require("../model/Student");
 
 router.post("/students",async(req,res)=>{
     const student=new Student(req.body);
